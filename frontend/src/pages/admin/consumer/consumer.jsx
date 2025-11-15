@@ -8,7 +8,7 @@ export default function ConsumerDetailsPage() {
   useEffect(() => {
     const fetchConsumers = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/contacts/getcontacts');
+        const response = await fetch('https://tejaswini-sales-u3tj.vercel.app/api/contacts/getcontacts');
         const data = await response.json();
         console.log(data);
         

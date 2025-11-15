@@ -6,7 +6,7 @@ export async function fetchUserDetails() {
   }
 
   try {
-    const response = await fetch('http://localhost:5000/api/users/get-user-info', {
+    const response = await fetch('https://tejaswini-sales-u3tj.vercel.app/api/users/get-user-info', {
       headers: {
         'Authorization': `Bearer ${token}`,
         'Content-Type': 'application/json'

@@ -19,7 +19,7 @@ export default function ContactForm() {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/contacts",
+        "https://tejaswini-sales-u3tj.vercel.app/api/contacts",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },

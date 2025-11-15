@@ -15,7 +15,7 @@ export default function ConsultationsPage() {
 
   useEffect(() => {
     setLoading(true);
-    fetch('http://localhost:5000/api/consultations')
+    fetch('https://tejaswini-sales-u3tj.vercel.app/api/consultations')
       .then((response) => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
@@ -35,7 +35,7 @@ export default function ConsultationsPage() {
   console.log(consultations);
   
   const deleteConsultation = (id) => {
-    fetch(`http://localhost:5000/api/consultations/${id}`, {
+    fetch(`https://tejaswini-sales-u3tj.vercel.app/api/consultations/${id}`, {
       method: 'DELETE',
     })
     .then(response => {

@@ -11,7 +11,7 @@ export default function Dashboard() {
 
   useEffect(() => {
     const fetchDailyCalls = async () => {
-      const response = await fetch('http://localhost:5000/api/calls/daily-calls');
+      const response = await fetch('https://tejaswini-sales-u3tj.vercel.app/api/calls/daily-calls');
       const data = await response.json();
       setDailyConsultations(data.dailyConsultations);
       setDailyContacts(data.dailyContacts);
@@ -19,7 +19,7 @@ export default function Dashboard() {
 
     const fetchApplications = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/job-applications');
+        const response = await fetch('https://tejaswini-sales-u3tj.vercel.app/api/job-applications');
         if (!response.ok) {
           throw new Error('Failed to fetch applications');
         }

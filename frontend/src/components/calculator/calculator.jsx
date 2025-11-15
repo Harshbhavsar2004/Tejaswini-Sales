@@ -91,7 +91,7 @@ export default function ConsultationForm() {
       type: type
     };
 
-    fetch('http://localhost:5000/api/consultations/submit', {
+    fetch('https://tejaswini-sales-u3tj.vercel.app/api/consultations/submit', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
