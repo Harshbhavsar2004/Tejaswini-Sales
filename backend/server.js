@@ -18,6 +18,8 @@ app.use(express.json());
 const allowedOrigins = [
   'https://tejaswini-sales-omega.vercel.app/',
   'https://tejaswini-sales-omega.vercel.app',
+  'tejaswinisolar.in',
+  'www.tejaswinisolar.in',
   'http://localhost:5173', // Add localhost for development if needed
 ];
 
