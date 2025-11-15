@@ -16,6 +16,7 @@ app.use(express.json());
 
 // List of allowed origins
 const allowedOrigins = [
+  'https://tejaswini-sales-omega.vercel.app/',
   'http://localhost:5173', // Add localhost for development if needed
 ];
 
