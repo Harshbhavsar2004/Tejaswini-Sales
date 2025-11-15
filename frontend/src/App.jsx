@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-d
 import { fetchUserDetails } from './utils/auth';
 import { HeroSection } from './components/hero/HeroSection';
 import ConsultationForm from './components/calculator/calculator';
-import Project from './pages/project/project';
+import ProjectsPage from './pages/project/Project';
 import AboutPage from './pages/about/About';
 import ContactForm from './pages/contact/Contact';
 import Dashboard from './pages/admin/dashboard/Dashboard';
@@ -50,7 +50,7 @@ function App() {
         <Route path='/login' element={<LoginPage/>}/>
         <Route path='/signup' element={<SignupForm/>}/>
         <Route path="/calculator" element={<ConsultationForm />} />
-        <Route path='/project' element={<Project/>} />
+        <Route path='/project' element={<ProjectsPage/>} />
         <Route path='/about' element={<AboutPage />} />
         <Route path='/contact' element={<ContactForm />} />
         <Route path='/admin' element={<ProtectedRoute><Dashboard/></ProtectedRoute>} />
